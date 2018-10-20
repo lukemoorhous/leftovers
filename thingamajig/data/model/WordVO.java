@@ -16,6 +16,14 @@ public class WordVO {
 		this.word = word;
 	}
 	
+	public WordVO(String word, WordFunction function, WordRoot root, AssociationSet associations, List<WordVO> synonyms) {
+		this.word = word;
+		this.function = function;
+		this.root = root;
+		this.associations = associations;
+		this.synonyms = synonyms;
+	}
+	
 	public WordFunction getFunction() {
 		return this.function;
 	}
