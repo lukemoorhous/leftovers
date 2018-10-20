@@ -14,7 +14,7 @@ public class Field {
 	public String getFieldName() {
 		return fieldName;
 	}
-	public List<FieldRecord> records() {
+	public List<FieldRecord> getRecords() {
 		return records;
 	}
 	public void setRecords(List<FieldRecord> records) {
