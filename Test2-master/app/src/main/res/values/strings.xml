@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Test2</string>
+    <string name="button">Button</string>
+    <string name="title_activity_page2">Page2</string>
+    <string name="Testing" />
+    <string name="hello">hello</string>
+</resources>
