@@ -10,12 +10,12 @@ import planter.data.FieldRecord;
 public class Planter {
 	Collection<Field> fields = null;
 	
-	private static class PlanterHolder {
+	public static class PlanterHolder {
 		private static Planter INSTANCE = new Planter();
-		
-		public Planter getInstance() {
-			return INSTANCE;
-		}
+	}
+	
+	public static Planter getInstance() {
+		return PlanterHolder.INSTANCE;
 	}
 	
 	private Planter() {
