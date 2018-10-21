@@ -1,4 +1,4 @@
-package planter.data;
+package com.planter.data;
 
 public class FieldRecord {
 

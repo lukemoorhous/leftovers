@@ -1,11 +1,11 @@
-package planter.app;
+package com.planter.app;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 
-import planter.data.Field;
-import planter.data.FieldRecord;
+import com.planter.data.Field;
+import com.planter.data.FieldRecord;
 
 public class Planter {
 	Collection<Field> fields = null;

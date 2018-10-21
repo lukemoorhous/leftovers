@@ -1,4 +1,4 @@
-package planter.data;
+package com.planter.data;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -8,6 +8,7 @@ import android.content.*;
 import android.text.*;
 import com.planter.API.*;
 
+
 public class NewEntry extends AppCompatActivity {
 
     @Override

@@ -2,9 +2,9 @@ package com.planter.API;
 
 import java.util.Collection;
 
-import planter.data.Field;
-import planter.data.FieldRecord;
-import planter.app.Planter;
+import com.planter.data.Field;
+import com.planter.data.FieldRecord;
+import com.planter.app.Planter;
 
 public class PlanterAPI {
 	
