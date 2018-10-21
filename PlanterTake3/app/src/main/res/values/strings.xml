@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">PlanterTake3</string>
+    <string name="recent_entries">Recent Entries</string>
+    <string name="new_entry">New Entry</string>
+    <string name="welcome_to_planter">Welcome to Planter!</string>
+    <string name="field_name">Field Name</string>
+    <string name="crop_type">Crop Type</string>
+    <string name="soil_water_amount">Soil/Water Amount</string>
+    <string name="height_of_crop">Height of Crop</string>
+    <string name="please_enter_the_appropriate_value">Please enter the Appropriate Value</string>
+    <string name="finish">Finish</string>
 </resources>
