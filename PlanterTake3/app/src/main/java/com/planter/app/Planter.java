@@ -19,10 +19,11 @@ public class Planter {
 	}
 	
 	private Planter() {
-		fields = new ArrayList<Field>();
+		fields = new ArrayList<>();
 	}
 	
 	public void addRecord(FieldRecord record) {
+		System.out.println("Step 2");
 		for (Field field : fields) {
 			if (field.getFieldName().equals(record.getFieldName())) {
 				field.addRecord(record);
@@ -30,8 +31,13 @@ public class Planter {
 			}
 		}
 		Field field = new Field(record.getFieldName());
-		field.setRecords(Arrays.asList(new FieldRecord[] { record } ));
+		ArrayList<FieldRecord> fieldRecords = new ArrayList<>();
+		fieldRecords.add(record);
+
+		field.setRecords(fieldRecords);
+
 		fields.add(field);
+		field.addRecord(record);
 	}
 	
 	public FieldRecord getMostRecentRecord(String fieldName) {

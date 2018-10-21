@@ -1,4 +1,4 @@
-package planter.app;
+package com.planter.app;
 
 public class PlanterForm {
 	

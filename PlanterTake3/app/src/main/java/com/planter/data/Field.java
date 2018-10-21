@@ -5,11 +5,11 @@ import java.util.List;
 
 public class Field {
 	private String fieldName = null;
-	private List<FieldRecord> records = null;
+	private List<FieldRecord> records;
 	
 	public Field(String name) {
 		this.fieldName = name;
-		records = new ArrayList<FieldRecord>();
+		records = new ArrayList<>();
 	}
 	public String getFieldName() {
 		return fieldName;
@@ -21,6 +21,9 @@ public class Field {
 		this.records = records;
 	}
 	public void addRecord(FieldRecord record) {
+		System.out.print("hi");
+		System.out.println(record);
+		System.out.println(records.size());
 		this.records.add(record);
 	}
 }

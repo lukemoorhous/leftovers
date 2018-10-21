@@ -25,13 +25,26 @@ public class RecentEntry extends AppCompatActivity {
         TextView water = (TextView) findViewById(R.id.variable3);
         TextView height = (TextView) findViewById(R.id.variable4);
 
-        String water2 = "" + x.getMostRecentRecord("Corn").getWater();
-        String height2 = "" + x.getMostRecentRecord("Corn").getHeight();
+        if(x.getMostRecentRecord("Corn") != null) {
+            String field2 = x.getMostRecentRecord("Corn").getFieldName();
+            String crop2 = x.getMostRecentRecord("Corn").getCrop();
+            String water2 = "" + x.getMostRecentRecord("Corn").getWater();
+            String height2 = "" + x.getMostRecentRecord("Corn").getHeight();
 
-        field.setText(x.getMostRecentRecord("Corn").getFieldName());
-        crop.setText(x.getMostRecentRecord("Corn").getCrop());
-        water.setText(water2);
-        height.setText(height2);
+            field.setText(field2);
+            crop.setText(crop2);
+            water.setText(water2);
+            height.setText(height2);
+        }
+        else
+        {
+            field.setText("null");
+            crop.setText("null");
+            water.setText("null");
+            height.setText("null");
+        }
+
+
 
         Button home = (Button) findViewById(R.id.homeButton);
         home.setOnClickListener(new View.OnClickListener(){

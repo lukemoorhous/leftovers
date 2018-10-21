@@ -49,4 +49,10 @@ public class FieldRecord {
 	public void setHeight(double height) {
 		this.height = height;
 	}
+
+	@Override
+	public String toString()
+	{
+		return String.format("%s %s %f %f", this.fieldName, this.crop, this.water, this.height);
+	}
 }

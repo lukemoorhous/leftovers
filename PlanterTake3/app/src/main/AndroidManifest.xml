@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".NewEntry" />
-        <activity android:name=".RecentEntry"></activity>
+        <activity android:name=".RecentEntry" />
+        <activity android:name=".RecentFieldName"></activity>
     </application>
 
 </manifest>

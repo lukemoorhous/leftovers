@@ -14,10 +14,12 @@ public class PlanterAPI {
 	
 	public void addRecord(String field, String crop, 
 			double water, double height) {
+		System.out.println("step 1");
 		Planter.getInstance().addRecord(new FieldRecord(field, crop, water, height));
 	}
 	
 	public FieldRecord getMostRecentRecord(String field) {
+
 		return Planter.getInstance().getMostRecentRecord(field);
 	}
 	
