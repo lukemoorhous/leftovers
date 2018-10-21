@@ -4,15 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/ic_launcher_backs"
     tools:context=".RecentFieldName">
 
     <EditText
         android:id="@+id/editText3"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
+        android:background="@color/colorAccent"
         android:ems="10"
         android:hint="Field Name"
         android:inputType="textPersonName"
+        android:textColor="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="84dp" />
