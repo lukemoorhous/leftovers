@@ -49,6 +49,27 @@ public class Planter {
 		
 		return null;
 	}
+
+	public FieldRecord getRecords(String fieldName, int index)
+	{
+		for (Field field : fields) {
+			if (field.getFieldName().equals(fieldName)) {
+				return field.getRecords().get(index);
+			}
+		}
+
+		return null;
+	}
+
+	public int getFieldLength(String fieldName) {
+		for (Field field : fields) {
+			if (field.getFieldName().equals(fieldName)) {
+				return field.getRecords().size();
+			}
+		}
+
+		return 0;
+	}
 	
 	public Field getField(String fieldName) {
 		for (Field field : fields) {

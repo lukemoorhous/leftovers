@@ -40,7 +40,7 @@ public class NewEntry extends AppCompatActivity {
 
     public void goToRecentEntry()
     {
-        Intent intent = new Intent(this, RecentEntry.class);
+        Intent intent = new Intent(this, RecentFieldName.class);
         startActivity(intent);
     }
 

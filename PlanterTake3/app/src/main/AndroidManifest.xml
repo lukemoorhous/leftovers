@@ -18,7 +18,9 @@
         </activity>
         <activity android:name=".NewEntry" />
         <activity android:name=".RecentEntry" />
-        <activity android:name=".RecentFieldName"></activity>
+        <activity android:name=".RecentFieldName" />
+        <activity android:name=".PastData" />
+        <activity android:name=".PastData1"></activity>
     </application>
 
 </manifest>

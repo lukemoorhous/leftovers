@@ -22,6 +22,15 @@ public class PlanterAPI {
 
 		return Planter.getInstance().getMostRecentRecord(field);
 	}
+
+	public FieldRecord getRecord(String field, int index){
+		return Planter.getInstance().getRecords(field, index);
+	}
+
+	public int getFieldLength(String field)
+	{
+		return Planter.getInstance().getFieldLength(field);
+	}
 	
 	public Collection<Field> getAllFields() {
 		return Planter.getInstance().getFields();

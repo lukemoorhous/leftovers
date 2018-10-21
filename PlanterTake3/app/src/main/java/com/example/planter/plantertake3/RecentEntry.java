@@ -20,16 +20,18 @@ public class RecentEntry extends AppCompatActivity {
 
         PlanterAPI x = new PlanterAPI();
 
+        Button past = (Button) findViewById(R.id.past);
+
         TextView field = (TextView) findViewById(R.id.variable1);
         TextView crop = (TextView) findViewById(R.id.variable2);
         TextView water = (TextView) findViewById(R.id.variable3);
         TextView height = (TextView) findViewById(R.id.variable4);
-
-        if(x.getMostRecentRecord("Corn") != null) {
-            String field2 = x.getMostRecentRecord("Corn").getFieldName();
-            String crop2 = x.getMostRecentRecord("Corn").getCrop();
-            String water2 = "" + x.getMostRecentRecord("Corn").getWater();
-            String height2 = "" + x.getMostRecentRecord("Corn").getHeight();
+        String types = RecentFieldName.types();
+        if(x.getMostRecentRecord(types) != null) {
+            String field2 = x.getMostRecentRecord(types).getFieldName();
+            String crop2 = x.getMostRecentRecord(types).getCrop();
+            String water2 = "" + x.getMostRecentRecord(types).getWater();
+            String height2 = "" + x.getMostRecentRecord(types).getHeight();
 
             field.setText(field2);
             crop.setText(crop2);
@@ -42,6 +44,7 @@ public class RecentEntry extends AppCompatActivity {
             crop.setText("null");
             water.setText("null");
             height.setText("null");
+            past.setVisibility(View.INVISIBLE);
         }
 
 
@@ -54,12 +57,26 @@ public class RecentEntry extends AppCompatActivity {
             }
         });
 
+        past.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PastData.setIndex(1);
+                goPast();
+            }
+        });
+
 
     }
 
     public void goHome()
     {
         Intent intent = new Intent(this, StartPage.class);
+        startActivity(intent);
+    }
+
+    public void goPast()
+    {
+        Intent intent = new Intent(this, PastData.class);
         startActivity(intent);
     }
 }
