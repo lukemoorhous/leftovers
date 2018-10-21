@@ -9,8 +9,15 @@ public class FieldRecord {
 	
 	public FieldRecord(String fieldName) {
 		setFieldName(fieldName);
-		
 	}
+	
+	public FieldRecord(String fieldName, String crop, double water, double height) {
+		setFieldName(fieldName);
+		setCrop(crop);
+		setWater(water);
+		setHeight(height);
+	}
+	
 	public void setFieldName(String fieldName) {
 		this.fieldName = fieldName;
 	}
