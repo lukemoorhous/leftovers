@@ -30,8 +30,8 @@ public class RecentEntry extends AppCompatActivity {
         if(x.getMostRecentRecord(types) != null) {
             String field2 = x.getMostRecentRecord(types).getFieldName();
             String crop2 = x.getMostRecentRecord(types).getCrop();
-            String water2 = "" + x.getMostRecentRecord(types).getWater();
-            String height2 = "" + x.getMostRecentRecord(types).getHeight();
+            String water2 = "" + x.getMostRecentRecord(types).getWater() + " VWC";
+            String height2 = "" + x.getMostRecentRecord(types).getHeight() + " in.";
 
             field.setText(field2);
             crop.setText(crop2);
@@ -40,10 +40,21 @@ public class RecentEntry extends AppCompatActivity {
         }
         else
         {
-            field.setText("null");
-            crop.setText("null");
-            water.setText("null");
-            height.setText("null");
+            TextView var1 = (TextView) findViewById(R.id.textView);
+            TextView var2 = (TextView) findViewById(R.id.textView2);
+            TextView var3 = (TextView) findViewById(R.id.textView3);
+            TextView var4 = (TextView) findViewById(R.id.textView4);
+
+            var1.setVisibility(View.INVISIBLE);
+            var2.setVisibility(View.INVISIBLE);
+            var3.setVisibility(View.INVISIBLE);
+            var4.setVisibility(View.INVISIBLE);
+
+
+            field.setText("No Field with name of" );
+            crop.setText(types);
+            water.setText("Is Recorded");
+            height.setText("");
             past.setVisibility(View.INVISIBLE);
         }
 

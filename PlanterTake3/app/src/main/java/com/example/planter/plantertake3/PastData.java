@@ -34,8 +34,8 @@ public class PastData extends AppCompatActivity {
 
         var1.setText(x.getRecord(types, index).getFieldName());
         var2.setText(x.getRecord(types, index).getCrop());
-        var3.setText("" + x.getRecord(types, index).getWater());
-        var4.setText("" + x.getRecord(types, index).getHeight());
+        var3.setText("" + x.getRecord(types, index).getWater() + " VWC");
+        var4.setText("" + x.getRecord(types, index).getHeight() + " in.");
 
         previous.setOnClickListener(new View.OnClickListener() {
             @Override
